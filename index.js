@@ -3,7 +3,6 @@ module.exports = function (sails) {
     const setup = require('./lib/setup')
     const exec = require('./lib/exec')
     const init = require('./lib/init')
-    const install = require('./lib/install')
 
     
     gladys.on('ready', function(){
@@ -14,6 +13,5 @@ module.exports = function (sails) {
         setup,
         exec,
         init,
-        install,
     }
 }
