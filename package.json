@@ -5,6 +5,7 @@
     "author": "Mathieu Andrade",
     "main": "index.js",
     "dependencies": {
-        "ps4-waker": "^1.4.3"
+        "ps4-waker": "^1.4.3",
+        "express": "^4.15.4"
     }
 }
