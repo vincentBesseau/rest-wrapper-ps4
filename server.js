@@ -17,7 +17,7 @@ const get_options = function () {
     }
 };
 
-router.route("power/state=:value")
+router.route("/power/state=:value")
     .get(function (req, res) {
         let ps4 = new Device(get_options());
         if(req.params.value == 1){
