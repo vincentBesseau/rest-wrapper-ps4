@@ -1,9 +1,9 @@
 {
-    "name": "gladys-ps4",
-    "version": "0.0.1",
-    "description": "This module can comunicate with ps4",
+    "name": "rest-wrapper-ps4",
+    "version": "0.2.0",
+    "description": "REST wrapper to talk to ps4",
     "author": "Mathieu Andrade",
-    "main": "index.js",
+    "main": "server.js",
     "dependencies": {
         "ps4-waker": "^1.4.3",
         "express": "^4.15.4"
