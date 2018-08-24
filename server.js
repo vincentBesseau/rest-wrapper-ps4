@@ -25,6 +25,23 @@ const get_options = function () {
     }
 };
 
+console.log('Create device '+res.name);
+gladysMqttAdapter.device.create({
+    device : {
+        name: 'Playstation 4',
+        protocol: 'MQTT',
+        service: 'gladys-playstation4',
+    },
+    types : [{
+                name: 'PS4 - State',
+                type: 'binary',
+                unit: '',
+                sensor: false,
+                min: 0,
+                max: 1,
+            },]
+})
+
 gladysMqttAdapter.on('message-notify', function(data) {
     if(data._module === 'playstation4') {
         let ps4 = new Device(get_options());
