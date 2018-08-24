@@ -1,5 +1,11 @@
 #!/usr/bin/env node
 
+// if we are running inside sails.js, it means we are running inside Gladys
+// This file is not supposed to run inside Gladys so stop now.
+if ( typeof sails !== 'undefined' && sails ) {
+    return '';
+}
+
 const config = require("./config.js")
 const {Device} = require("ps4-waker");
 
