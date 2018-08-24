@@ -6,6 +6,6 @@
     "main": "server.js",
     "dependencies": {
         "ps4-waker": "^1.4.3",
-        "gladys-mqtt-adapter": "^0.2.1",
+        "gladys-mqtt-adapter": "^0.2.1"
     }
 }
