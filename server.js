@@ -69,7 +69,7 @@ gladysMqttAdapter.on('message-notify', function(data) {
             }
         } else if (data._type === 'game') {
             ps4.startTitle(data._value).then(function () {
-                res.json(OK);
+                console.log('Games '+data._value+' started !')
                 ps4.close();
             }).catch(
                 function (err) {
